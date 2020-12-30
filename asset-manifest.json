@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sikebal-deploy/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/sikebal-deploy/static/js/main.e376ca8b.chunk.js",
+    "main.js.map": "/sikebal-deploy/static/js/main.e376ca8b.chunk.js.map",
+    "runtime-main.js": "/sikebal-deploy/static/js/runtime-main.0ecef9f3.js",
+    "runtime-main.js.map": "/sikebal-deploy/static/js/runtime-main.0ecef9f3.js.map",
+    "static/js/2.8fe31233.chunk.js": "/sikebal-deploy/static/js/2.8fe31233.chunk.js",
+    "static/js/2.8fe31233.chunk.js.map": "/sikebal-deploy/static/js/2.8fe31233.chunk.js.map",
+    "static/js/3.54a98a2b.chunk.js": "/sikebal-deploy/static/js/3.54a98a2b.chunk.js",
+    "static/js/3.54a98a2b.chunk.js.map": "/sikebal-deploy/static/js/3.54a98a2b.chunk.js.map",
+    "index.html": "/sikebal-deploy/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/sikebal-deploy/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.8fe31233.chunk.js.LICENSE.txt": "/sikebal-deploy/static/js/2.8fe31233.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ecef9f3.js",
+    "static/js/2.8fe31233.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.e376ca8b.chunk.js"
+  ]
+}
