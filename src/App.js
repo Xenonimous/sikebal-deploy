@@ -1,16 +1,22 @@
-// import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
+import Home from './components/Home'
+// import GetPenduduk from './components/GetPenduduk';
 
-function App() {
-  return (
-    <div>
 
-      <h1>
-        React APP
-      </h1>
+class App extends Component {
+  render() {    
+    return (
 
-    </div>
-  );
+      <BrowserRouter>
+        <div> 
+            <Route path="/" component={Home}/>
+        </div>
+      </BrowserRouter>
+
+
+    );
+  }
 }
 
 export default App;
