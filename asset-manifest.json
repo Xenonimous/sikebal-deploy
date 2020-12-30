@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/sikebal-deploy/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/sikebal-deploy/static/js/main.4a35b1d3.chunk.js",
-    "main.js.map": "/sikebal-deploy/static/js/main.4a35b1d3.chunk.js.map",
-    "runtime-main.js": "/sikebal-deploy/static/js/runtime-main.6b640b22.js",
-    "runtime-main.js.map": "/sikebal-deploy/static/js/runtime-main.6b640b22.js.map",
-    "static/js/2.04f9932c.chunk.js": "/sikebal-deploy/static/js/2.04f9932c.chunk.js",
-    "static/js/2.04f9932c.chunk.js.map": "/sikebal-deploy/static/js/2.04f9932c.chunk.js.map",
-    "static/js/3.1532825f.chunk.js": "/sikebal-deploy/static/js/3.1532825f.chunk.js",
-    "static/js/3.1532825f.chunk.js.map": "/sikebal-deploy/static/js/3.1532825f.chunk.js.map",
+    "main.js": "/sikebal-deploy/static/js/main.1eb906b6.chunk.js",
+    "main.js.map": "/sikebal-deploy/static/js/main.1eb906b6.chunk.js.map",
+    "runtime-main.js": "/sikebal-deploy/static/js/runtime-main.ccd8bc0d.js",
+    "runtime-main.js.map": "/sikebal-deploy/static/js/runtime-main.ccd8bc0d.js.map",
+    "static/js/2.10f75b66.chunk.js": "/sikebal-deploy/static/js/2.10f75b66.chunk.js",
+    "static/js/2.10f75b66.chunk.js.map": "/sikebal-deploy/static/js/2.10f75b66.chunk.js.map",
+    "static/js/3.7e2c8cfb.chunk.js": "/sikebal-deploy/static/js/3.7e2c8cfb.chunk.js",
+    "static/js/3.7e2c8cfb.chunk.js.map": "/sikebal-deploy/static/js/3.7e2c8cfb.chunk.js.map",
     "index.html": "/sikebal-deploy/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/sikebal-deploy/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.04f9932c.chunk.js.LICENSE.txt": "/sikebal-deploy/static/js/2.04f9932c.chunk.js.LICENSE.txt"
+    "static/js/2.10f75b66.chunk.js.LICENSE.txt": "/sikebal-deploy/static/js/2.10f75b66.chunk.js.LICENSE.txt",
+    "static/media/card1.327e9004.jpg": "/sikebal-deploy/static/media/card1.327e9004.jpg",
+    "static/media/card2.af5769a8.jpg": "/sikebal-deploy/static/media/card2.af5769a8.jpg",
+    "static/media/card3.4cd17f06.jpg": "/sikebal-deploy/static/media/card3.4cd17f06.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b640b22.js",
-    "static/js/2.04f9932c.chunk.js",
+    "static/js/runtime-main.ccd8bc0d.js",
+    "static/js/2.10f75b66.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.4a35b1d3.chunk.js"
+    "static/js/main.1eb906b6.chunk.js"
   ]
 }
