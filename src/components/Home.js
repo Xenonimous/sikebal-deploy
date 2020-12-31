@@ -344,16 +344,16 @@ const Home = () => {
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.containerC} data-aos="fade" data-aos-offset="0">
                     <center>
                         <Grid container spacing={0} style={{marginBottom: '3%'}}>
-                            <Grid item xs={2} sm={2} md={3} lg={3} xl={4}>
+                            <Grid item xs={0} sm={0} md={3} lg={3} xl={4}>
                             </Grid>
-                            <Grid item xs={8} sm={8} md={6} lg={6} xl={4}>
+                            <Grid item xs={12} sm={12} md={6} lg={6} xl={4}>
                             <Typography className={classes.titleContent} style={{ color: 'white' }}>
                                 Selalu Ingat Pesan Ibu!
                             </Typography>
                             <br/>
                             <YoutubeRespon />
                             </Grid>
-                            <Grid item xs={2} sm={2} md={3} lg={3} xl={4}>
+                            <Grid item xs={0} sm={0} md={3} lg={3} xl={4}>
                             </Grid>
                         </Grid>
                         
@@ -373,7 +373,7 @@ const Home = () => {
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
 
                     <Grid container spacing={0} className={classes.containerFooter} data-aos="fade" data-aos-offset="0">
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <Grid item xs={0} sm={12} md={12} lg={12} xl={12}>
                             <center>
                                 <Typography className={classes.titleContent} style={{ color: 'white', marginTop: '3%' }}>
                                     Supported By:
@@ -385,7 +385,7 @@ const Home = () => {
                                 <img alt="" src={LogoNPM} className={classes.logoSize} />
                             </center>
                         </Grid>
-                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
+                        <Grid item xs={0} sm={6} md={3} lg={3} xl={3}>
                             <center>
                                 <img alt="" src={LogoReact} className={classes.logoSize} />
                             </center>
