@@ -1,7 +1,6 @@
 //react
 import React from 'react';
 import { useEffect } from 'react';
-import ReactPlayer from "react-player";
 
 //material-ui
 import { Grid, Typography } from '@material-ui/core'
@@ -155,7 +154,18 @@ const useStyles = makeStyles({
     },
 
     reactPlayer: {
-        margin: '2% 2%',
+        // margin: '2% 2%',
+
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+    },
+
+    reactWrapper: {
+        position: 'relative',
+        paddingTop: '56,25%',
     },
 
     logoSize: {
@@ -180,7 +190,7 @@ const Home = () => {
         <div>
             {/* konten */}
             <Grid container spacing={0}>
-                
+
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <AppBar position="fixed" className={classes.appbarClass}>
                         <center>
@@ -333,15 +343,6 @@ const Home = () => {
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.containerC} data-aos="fade" data-aos-offset="0">
                     <center>
                         <Typography className={classes.titleContent} style={{ color: 'white' }}>
-                            Jangan Lupa Selalu Ingat Pesan Ibu!
-                                    </Typography>
-                        <ReactPlayer style={{ marginTop: '2%', marginBottom: '2%' }}
-                            url='https://www.youtube.com/watch?v=SSKeCJDwXhs&ab_channel=KatadataIndonesia'
-                        />
-
-                        <br />
-
-                        <Typography className={classes.titleContent} style={{ color: 'white' }}>
                             Menerapkan 3M Demi Keselamatan Bersama
                             </Typography>
                         <Typography style={{ color: 'white' }}>
@@ -381,7 +382,7 @@ const Home = () => {
                         </Grid>
                         <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
                             <center>
-                                <img  alt="" src={LogoAxios} className={classes.logoSize} />
+                                <img alt="" src={LogoAxios} className={classes.logoSize} />
                             </center>
                         </Grid>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
