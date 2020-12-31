@@ -366,22 +366,22 @@ const Home = () => {
                         </Grid>
                         <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
                             <center>
-                                <img src={LogoNPM} className={classes.logoSize} />
+                                <img alt="" src={LogoNPM} className={classes.logoSize} />
                             </center>
                         </Grid>
                         <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
                             <center>
-                                <img src={LogoReact} className={classes.logoSize} />
+                                <img alt="" src={LogoReact} className={classes.logoSize} />
                             </center>
                         </Grid>
                         <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
                             <center>
-                                <img src={LogoMaterial} className={classes.logoSize} />
+                                <img alt="" src={LogoMaterial} className={classes.logoSize} />
                             </center>
                         </Grid>
                         <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
                             <center>
-                                <img src={LogoAxios} className={classes.logoSize} />
+                                <img  alt="" src={LogoAxios} className={classes.logoSize} />
                             </center>
                         </Grid>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
