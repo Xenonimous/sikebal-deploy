@@ -16,6 +16,7 @@ import GetKasus from './GetKasus';
 import GetSembuh from './GetSembuh';
 import GetMeninggal from './GetMeninggal';
 import Zona from './Zona';
+import YoutubeRespon from './YoutubeRespon';
 
 // images
 import Card1 from '../img/card1.jpg'
@@ -342,6 +343,20 @@ const Home = () => {
 
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.containerC} data-aos="fade" data-aos-offset="0">
                     <center>
+                        <Grid container spacing={0} style={{marginBottom: '3%'}}>
+                            <Grid item xs={2} sm={2} md={3} lg={3} xl={4}>
+                            </Grid>
+                            <Grid item xs={8} sm={8} md={6} lg={6} xl={4}>
+                            <Typography className={classes.titleContent} style={{ color: 'white' }}>
+                                Selalu Ingat Pesan Ibu!
+                            </Typography>
+                            <br/>
+                            <YoutubeRespon />
+                            </Grid>
+                            <Grid item xs={2} sm={2} md={3} lg={3} xl={4}>
+                            </Grid>
+                        </Grid>
+                        
                         <Typography className={classes.titleContent} style={{ color: 'white' }}>
                             Menerapkan 3M Demi Keselamatan Bersama
                             </Typography>
