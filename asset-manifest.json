@@ -1,27 +1,31 @@
 {
   "files": {
     "main.css": "/sikebal-deploy/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/sikebal-deploy/static/js/main.2edd01f4.chunk.js",
-    "main.js.map": "/sikebal-deploy/static/js/main.2edd01f4.chunk.js.map",
-    "runtime-main.js": "/sikebal-deploy/static/js/runtime-main.b903d15b.js",
-    "runtime-main.js.map": "/sikebal-deploy/static/js/runtime-main.b903d15b.js.map",
-    "static/js/2.3c67bfe4.chunk.js": "/sikebal-deploy/static/js/2.3c67bfe4.chunk.js",
-    "static/js/2.3c67bfe4.chunk.js.map": "/sikebal-deploy/static/js/2.3c67bfe4.chunk.js.map",
-    "static/js/3.3901a18d.chunk.js": "/sikebal-deploy/static/js/3.3901a18d.chunk.js",
-    "static/js/3.3901a18d.chunk.js.map": "/sikebal-deploy/static/js/3.3901a18d.chunk.js.map",
+    "main.js": "/sikebal-deploy/static/js/main.2aced413.chunk.js",
+    "main.js.map": "/sikebal-deploy/static/js/main.2aced413.chunk.js.map",
+    "runtime-main.js": "/sikebal-deploy/static/js/runtime-main.ae5e7d05.js",
+    "runtime-main.js.map": "/sikebal-deploy/static/js/runtime-main.ae5e7d05.js.map",
+    "static/css/2.ec02d681.chunk.css": "/sikebal-deploy/static/css/2.ec02d681.chunk.css",
+    "static/js/2.3a5c8007.chunk.js": "/sikebal-deploy/static/js/2.3a5c8007.chunk.js",
+    "static/js/2.3a5c8007.chunk.js.map": "/sikebal-deploy/static/js/2.3a5c8007.chunk.js.map",
+    "static/js/3.dcb7cca9.chunk.js": "/sikebal-deploy/static/js/3.dcb7cca9.chunk.js",
+    "static/js/3.dcb7cca9.chunk.js.map": "/sikebal-deploy/static/js/3.dcb7cca9.chunk.js.map",
     "index.html": "/sikebal-deploy/index.html",
+    "static/css/2.ec02d681.chunk.css.map": "/sikebal-deploy/static/css/2.ec02d681.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/sikebal-deploy/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.3c67bfe4.chunk.js.LICENSE.txt": "/sikebal-deploy/static/js/2.3c67bfe4.chunk.js.LICENSE.txt",
-    "static/media/banner2.31ed48b7.jpeg": "/sikebal-deploy/static/media/banner2.31ed48b7.jpeg",
+    "static/js/2.3a5c8007.chunk.js.LICENSE.txt": "/sikebal-deploy/static/js/2.3a5c8007.chunk.js.LICENSE.txt",
+    "static/media/bannera.95954596.jpeg": "/sikebal-deploy/static/media/bannera.95954596.jpeg",
     "static/media/card1.327e9004.jpg": "/sikebal-deploy/static/media/card1.327e9004.jpg",
     "static/media/card2.af5769a8.jpg": "/sikebal-deploy/static/media/card2.af5769a8.jpg",
     "static/media/card3.4cd17f06.jpg": "/sikebal-deploy/static/media/card3.4cd17f06.jpg",
-    "static/media/contenta.3f1aeb7b.jpg": "/sikebal-deploy/static/media/contenta.3f1aeb7b.jpg"
+    "static/media/material-logo.5b2d8a0a.png": "/sikebal-deploy/static/media/material-logo.5b2d8a0a.png",
+    "static/media/react-logo.05e48353.png": "/sikebal-deploy/static/media/react-logo.05e48353.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b903d15b.js",
-    "static/js/2.3c67bfe4.chunk.js",
+    "static/js/runtime-main.ae5e7d05.js",
+    "static/css/2.ec02d681.chunk.css",
+    "static/js/2.3a5c8007.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.2edd01f4.chunk.js"
+    "static/js/main.2aced413.chunk.js"
   ]
 }
