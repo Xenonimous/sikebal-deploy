@@ -1,4 +1,9 @@
+//react
 import React from 'react';
+import { useEffect } from 'react';
+import ReactPlayer from "react-player";
+
+//material-ui
 import { Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -6,33 +11,42 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
+//components
 import GetPenduduk from './GetPenduduk';
 import GetKasus from './GetKasus';
 import GetSembuh from './GetSembuh';
 import GetMeninggal from './GetMeninggal';
 import Zona from './Zona';
 
+// images
 import Card1 from '../img/card1.jpg'
 import Card2 from '../img/card2.jpg'
 import Card3 from '../img/card3.jpg'
-import FotoBanner from '../img/banner2.jpeg'
+import FotoBanner from '../img/bannera.jpeg'
 import AppBar from '@material-ui/core/AppBar';
+import LogoNPM from '../img/npm-logo.png'
+import LogoReact from '../img/react-logo.png'
+import LogoMaterial from '../img/material-logo.png'
+import LogoAxios from '../img/axios-logo.png'
 
+//icons
 import CheckIcon from '@material-ui/icons/Check';
 import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
-import ContentA from '../img/contenta.jpg'
 
+//animation
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
-const useStyles = makeStyles((theme) => ({
+//material-ui-style
+const useStyles = makeStyles({
 
     gridCard: {
         backgroundImage: `url(${FotoBanner})`,
         backgroundSize: 'fit',
+        backgroundPosition: 'center center',
         width: 'auto',
         height: 'auto',
-        // paddingBottom: '15%',
-        // maxHeight:'auto',
     },
 
     appbarClass: {
@@ -62,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     cardphoto: {
         maxWidth: 'auto',
         maxHeight: 'auto',
-        margin: '1% 5%',
+        margin: '2% 5%',
     },
 
     media: {
@@ -78,22 +92,23 @@ const useStyles = makeStyles((theme) => ({
     },
 
     gridContent: {
-        padding: '7% 9% 7% 9%',
+        margin: '7% 9% 7% 9%',
     },
 
     containerA: {
         backgroundColor: '#F1F1F1',
+        padding: '7% 9% 7% 9%',
         width: 'auto',
-        height: '500px',
+        height: 'auto',
         alignItems: 'center',
         alignContent: 'center',
     },
 
     containerB: {
-        // backgroundColor: '#424A8B',
         backgroundColor: '#D5D5D5',
+        padding: '7% 9% 7% 9%',
         width: 'auto',
-        height: '500px',
+        height: 'auto',
         alignItems: 'center',
         alignContent: 'center',
     },
@@ -101,7 +116,9 @@ const useStyles = makeStyles((theme) => ({
     containerC: {
         // backgroundColor: '#B9B9B9',
         backgroundColor: '#424A8B',
-        height: '500px',
+        padding: '7% 9% 7% 9%',
+        width: 'auto',
+        height: 'auto',
         alignItems: 'center',
         alignContent: 'center',
     },
@@ -114,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
 
     containerFooter: {
         backgroundColor: '#1D1D1D',
-        height: '50px',
+        height: 'auto',
         alignItems: 'center',
     },
 
@@ -131,28 +148,45 @@ const useStyles = makeStyles((theme) => ({
     },
 
     fontTitle: {
-        fontSize: '28px',
+        fontSize: '32px',
         fontWeight: 'bold',
-        paddingLeft: '5%',
         color: 'white',
+        textAlign: 'center',
     },
 
-}));
+    reactPlayer: {
+        margin: '2% 2%',
+    },
 
+    logoSize: {
+        width: '100px',
+        height: '100px',
+        margin: '10%',
+    },
+
+
+});
+
+//react class component
 const Home = () => {
 
     const classes = useStyles();
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <div>
+            {/* konten */}
             <Grid container spacing={0}>
-                {/* konten */}
+                
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <AppBar position="fixed" className={classes.appbarClass}>
                         <center>
                             <Typography className={classes.appbarTitle}>
                                 SiKebal
-                                </Typography>
+                            </Typography>
                         </center>
                     </AppBar>
                 </Grid>
@@ -221,7 +255,7 @@ const Home = () => {
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
                                                 Zona Saat Ini
-                                 </Typography>
+                                            </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 <Zona />
                                             </Typography>
@@ -233,96 +267,126 @@ const Home = () => {
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                         <center>
-                                <Card className={classes.carddata}>
-                                    <CardActionArea>
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                <SentimentSatisfiedAltIcon style={{color: 'green'}}/>Sembuh
+                            <Card className={classes.carddata}>
+                                <CardActionArea>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            <SentimentSatisfiedAltIcon style={{ color: 'green' }} />Sembuh
                                             </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                <GetSembuh />
-                                            </Typography>
-                                        </CardContent>
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                <SentimentVeryDissatisfiedIcon style={{color: 'red'}}/> Meninggal
-                                            </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                <GetMeninggal />
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                </Card>
-                            </center>
-                        </Grid>
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            <GetSembuh />
+                                        </Typography>
+                                    </CardContent>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            <SentimentVeryDissatisfiedIcon style={{ color: 'red' }} /> Meninggal
+                                        </Typography>
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            <GetMeninggal />
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </center>
+                    </Grid>
 
                 </Grid>
 
-                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.containerA, classes.gridContent}>
-                            <Typography className={classes.titleContent}>
-                                Sudah Tau COVID-19 Itu Apa?
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.containerA} data-aos="fade" data-aos-offset="0">
+                    <Typography className={classes.titleContent}>
+                        Sudah Tau COVID-19 Itu Apa?
+                    </Typography>
+                    <Typography>
+                        COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.
+                    </Typography>
+                    {<br />}
+                    <Typography>
+                        Kasus pertama penyakit ini terjadi di kota Wuhan, Cina, pada akhir Desember 2019. Setelah itu, COVID-19 menular antarmanusia dengan sangat cepat dan menyebar ke puluhan negara, termasuk Indonesia, hanya dalam beberapa bulan.
+                    </Typography>
+                    {<br />}
+                    <Typography>
+                        Penyebarannya yang cepat membuat beberapa negara menerapkan kebijakan untuk memberlakukan lockdown untuk mencegah penyebaran virus Corona. Di Indonesia, pemerintah menerapkan kebijakan Pembatasan Sosial Berskala Besar (PSBB) untuk menekan penyebaran virus ini.
+                    </Typography>
+                </Grid>
+
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.containerB} data-aos="fade" data-aos-offset="0">
+                    <Typography className={classes.titleContent}>
+                        Bagaimana Mencegahnya?
+                    </Typography>
+                    <Typography>
+                        <CheckIcon />    Cuci tangan Anda secara rutin. Gunakan sabun dan air, atau cairan pembersih tangan berbahan alkohol.
+                                {<br />}
+                        <CheckIcon />    Selalu jaga jarak aman dengan orang yang batuk atau bersin.
+                                {<br />}
+                        <CheckIcon />    Kenakan masker jika pembatasan fisik tidak dimungkinkan.
+                                {<br />}
+                        <CheckIcon />    Jangan sentuh mata, hidung, atau mulut Anda.
+                                {<br />}
+                        <CheckIcon />    Saat batuk atau bersin, tutup mulut dan hidung Anda dengan lengan atau tisu.
+                                {<br />}
+                        <CheckIcon />    Jangan keluar rumah jika merasa tidak enak badan.
+                                {<br />}
+                        <CheckIcon />    Jika demam, batuk, atau kesulitan bernapas, segera cari bantuan medis.
+                    </Typography>
+                </Grid>
+
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.containerC} data-aos="fade" data-aos-offset="0">
+                    <center>
+                        <Typography className={classes.titleContent} style={{ color: 'white' }}>
+                            Jangan Lupa Selalu Ingat Pesan Ibu!
+                                    </Typography>
+                        <ReactPlayer style={{ marginTop: '2%', marginBottom: '2%' }}
+                            url='https://www.youtube.com/watch?v=SSKeCJDwXhs&ab_channel=KatadataIndonesia'
+                        />
+
+                        <br />
+
+                        <Typography className={classes.titleContent} style={{ color: 'white' }}>
+                            Menerapkan 3M Demi Keselamatan Bersama
                             </Typography>
-                            <Typography>
-                                COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.
-                            </Typography>
+                        <Typography style={{ color: 'white' }}>
+                            Memakai masker <CheckIcon />
                             {<br />}
-                            <Typography>
-                                Kasus pertama penyakit ini terjadi di kota Wuhan, Cina, pada akhir Desember 2019. Setelah itu, COVID-19 menular antarmanusia dengan sangat cepat dan menyebar ke puluhan negara, termasuk Indonesia, hanya dalam beberapa bulan.
-                            </Typography>
+                                Mencuci tangan <CheckIcon />
                             {<br />}
-                            <Typography>
-                                Penyebarannya yang cepat membuat beberapa negara menerapkan kebijakan untuk memberlakukan lockdown untuk mencegah penyebaran virus Corona. Di Indonesia, pemerintah menerapkan kebijakan Pembatasan Sosial Berskala Besar (PSBB) untuk menekan penyebaran virus ini.
-                            </Typography>
+                                Menjaga jarak dan menghindari kerumunan <CheckIcon />
+                        </Typography>
+                    </center>
                 </Grid>
 
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <Grid container spacing={0} className={classes.containerB}>
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.gridContent}>
-                            <Typography className={classes.titleContent}>
-                                Bagaimana Mencegahnya?
-                            </Typography>
-                            <Typography>
-                                <CheckIcon />    Cuci tangan Anda secara rutin. Gunakan sabun dan air, atau cairan pembersih tangan berbahan alkohol.
-                                {<br />}
-                                <CheckIcon />    Selalu jaga jarak aman dengan orang yang batuk atau bersin.
-                                {<br />}
-                                <CheckIcon />    Kenakan masker jika pembatasan fisik tidak dimungkinkan.
-                                {<br />}
-                                <CheckIcon />    Jangan sentuh mata, hidung, atau mulut Anda.
-                                {<br />}
-                                <CheckIcon />    Saat batuk atau bersin, tutup mulut dan hidung Anda dengan lengan atau tisu.
-                                {<br />}
-                                <CheckIcon />    Jangan keluar rumah jika merasa tidak enak badan.
-                                {<br />}
-                                <CheckIcon />    Jika demam, batuk, atau kesulitan bernapas, segera cari bantuan medis.
-                            </Typography>
 
-                        </Grid>
-                    </Grid>
-                </Grid>
-
-                <Grid itemxs={12} sm={12} md={12} lg={12} xl={12}>
-                    <Grid container spacing={0} className={classes.containerC}>
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.gridContent}>
-                            <Typography className={classes.titleContent} style={{ color: 'white' }}>
-                                Menerapkan 3M Demi Keselamatan Bersama
-                            </Typography>
-                            <Typography style={{ color: 'white' }}>
-                                <CheckIcon />   Memakai masker
-                                {<br />}
-                                <CheckIcon />   Mencuci tangan
-                                {<br />}
-                                <CheckIcon />   Menjaga jarak dan menghindari kerumunan
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                </Grid>
-
-                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <Grid container spacing={0} className={classes.containerFooter}>
+                    <Grid container spacing={0} className={classes.containerFooter} data-aos="fade" data-aos-offset="0">
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                             <center>
-                                <Typography style={{ color: 'white' }}>
+                                <Typography className={classes.titleContent} style={{ color: 'white', marginTop: '3%' }}>
+                                    Supported By:
+                                </Typography>
+                            </center>
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
+                            <center>
+                                <img src={LogoNPM} className={classes.logoSize} />
+                            </center>
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
+                            <center>
+                                <img src={LogoReact} className={classes.logoSize} />
+                            </center>
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
+                            <center>
+                                <img src={LogoMaterial} className={classes.logoSize} />
+                            </center>
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
+                            <center>
+                                <img src={LogoAxios} className={classes.logoSize} />
+                            </center>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                            <center>
+                                <Typography style={{ color: 'white', marginTop: '5%' }}>
                                     © 2020 - SiKebal
                             </Typography>
                             </center>
@@ -331,7 +395,6 @@ const Home = () => {
                 </Grid>
 
             </Grid>
-
         </div >
     )
 }
